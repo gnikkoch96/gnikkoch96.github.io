@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Image Vault </title>
+        
+        <!-- CSS Sheets -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous"/>
+        
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+            
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Replace the font here -->
+        <!-- Replace the font here -->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link"> Home </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html#services" class="nav__link"> My Services </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link"> About Me </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html#work" class="nav__link"> My Work </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction  -->
+        <section class="intro"> 
+            <h1 class="section__title section__title--intro">
+                <a href="https://github.com/KhaiTrinh/CECS453FinalProject"> <strong> Image Vault  </strong> </a>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro"> Android App</p>
+            <img src="img/imagevault.png" alt="Porfolio Item" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <br>
+            <p><strong>Description</strong></p>
+            <p>For our final project, we were tasked to come up with our own application. We wanted to make an app that utilized most of what we learned in our summer class with the addition of wanting to implement Firebase.</p>
+
+            <p>Image Vault is used to store images to the cloud. The user is able to view all of the images that they've uploaded as long as they are connected to a wi-fi service. They also have the option to delete an image. </p>
+
+            <br>
+            <p><strong>Technologies and Frameworks</strong></p>
+            <p> Android Studio (IDE) </p>
+            <p> AwesomeValidation </p>
+            <p> Draw.io </p>
+            <p> Firebase </p>
+            <p> Picasso </p>
+
+            
+            <br>
+            <p><strong>Project Design</strong></p>
+            <img src="https://github.com/KhaiTrinh/CECS453FinalProject/raw/main/app/pictures%20for%20read%20me/453%20Final%20Project.png"/>
+
+            <br>
+            <p><strong>Object Model</strong></p>
+            <img src="https://github.com/KhaiTrinh/CECS453FinalProject/raw/main/app/pictures%20for%20read%20me/Object%20Model.png"/>
+
+
+            <br>
+            <p><strong>Functionalities</strong></p>
+
+            <!--Login-->
+            <p><strong>Login</strong></p>
+            <p> We used Firebase's Authentication to validate the login</p>
+            <br>
+            <img src="https://github.com/KhaiTrinh/CECS453FinalProject/raw/main/app/pictures%20for%20read%20me/register.jpg" height="550"/>
+
+            <!--Register-->
+            <br>
+            <p><strong>Register</strong></p>
+            <p> Awesome Validation API was used to validate the input from the user. Making sure that the user's email follows the format of "@email.com", has a complex password (i.e. one uppercase, one lowercase, one special character, and one number), and checks to see if the user verified said password.</p>
+            <br>
+            <img src="https://github.com/KhaiTrinh/CECS453FinalProject/raw/main/app/pictures%20for%20read%20me/login.jpg" height="550"/>
+
+            <!--Upload-->
+            <br>
+            <p><strong>Uploading an Image</strong></p>
+            <p> Browsing for an image calls an implicit intent for the user to choose the app that they want to use to pick an image. The image will be loaded as a preview, and the user may click on the upload button to be sent to our Firebase storage.
+            </p>
+            <br>
+            <img src="https://github.com/KhaiTrinh/CECS453FinalProject/raw/main/app/pictures%20for%20read%20me/upload.jpg" height="550"/>
+            
+            <!--Image Vault-->
+            <br>
+            <p><strong> Vault </strong></p>
+            <p> The vault activity is where the user will be able to view all of the images that they've stored with us.
+
+            </p>
+            <br>
+            <img src="https://github.com/KhaiTrinh/CECS453FinalProject/raw/main/app/pictures%20for%20read%20me/vault.jpg" height="550"/>
+
+            <!--Deleting an Image-->
+            <br>
+            <p><strong>Deleting an Image</strong></p>         
+            <p> If the user wants to delete an image from their vault, all they need to do is press down on the image and a drop down menu will appear allowing the user to delete said image. </p>
+            <br>
+            <img src="https://github.com/KhaiTrinh/CECS453FinalProject/raw/main/app/pictures%20for%20read%20me/delete%20image.jpg" height="550"/>
+            
+            <br>
+            <p><strong>What I Learned </strong></p>  
+            <p><strong>Teamwork makes the Dreamwork </strong></p>
+            <p> Since we only had a week and a half to make this, teamwork was definitely one of the key factors of getting it done in time. My partner and I would always keep each other updated with the updates that we've done. We would also get on call to explain the code that we added, so that we would both be on the same page.</p>
+
+            <p><strong>Loading Images through URL</strong></p>
+            <p> We used another third party library called Picasso to handle the loading of images. In this project we used a recycler view to display each image that the user uploads. We use the Picasso library to download the image from the url given, and place it in our onBindViewHolder() in which binds the view holder with the image. </p>
+
+            <p><strong>Firebase</strong></p>
+            <p> My partner and I really enjoyed how user-friendly Firebase was. It took us a few days to understand what we needed to do with firebase in respect to our app's objective, but still was an enjoyable experience </p>
+
+            <p><strong>Firebase Storage</strong></p>
+            <p> We chose to store the images in the storage as opposed to the realtime database because we heard that it would be better, especially for larger sized images. </p>
+
+            <p>Storing an image requries the StorageTask class. Note that each user will have their own directory in our storage. To make sure that the user is uploading in their directory, we had to use the StorageReference class to hold the value of FirebaseStorage.getInstance().child(path). This will get a reference to the path string where path is the user's directory path in our storage.</p>
+
+            <p><strong>Firebase Realtime Database</strong></p>
+            <p> The image urls from the storage will be stored in here. Also, the unique value will be a randomly generated id that represents the user's unique id. This is to isolate the user's image urls from the other. </p>
+
+            <p>Just like the Storage, we also needed a DatabaseReference class to hold the value of FirebaseDatabase.getInstance().child(path). The path being the directory of the user's account. We created a helper class called Upload that will store the Url along with a caption (for the image). A helper class was used to properly store values into our database called Upload.</p>
+
+            <br>
+            <p><strong>Things I think we could improve on </strong></p>      
+            <p>We were thinking of instead to utilize a grid layout that displays all of the images, and that by clicking an image would enlarge it for a better view</p>
+            <p>We wanted to implement a sorting method that would sort the images in terms of recent to oldest</p>
+    
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="mailto:gnikkoch@gmail.com">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/nikko-chan-68533b121/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/gnikkoch96">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://drive.google.com/file/d/1KwQjAYofs502CQd9za35IVOtZegfpEVX/view?usp=sharing">
+                        <i class="fas fa-file"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

@@ -1,1 +1,0 @@
-# gnikkoch96.github.io

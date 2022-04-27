@@ -1,144 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>Nikko Dev Portfolio Website </title>
-        
-        <!-- CSS Sheets -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-            crossorigin="anonymous"/>
-        
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
-            
-        <link rel="stylesheet" href="css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous"/>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js" defer></script>
+    <title>Nikko's Portfolio Site</title>
+</head>
+<body>
+    <div class="header">
+        <!-- logo -->
+        <div class="logo">
+            <a href="./index.html"> <img src="./imgs/logo.png" alt="logo"></a>
+        </div>
 
-        <!-- Replace the font here -->
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <div class="header-links">
+            <!-- home -->
+            <div><a href="./index.html">Home</a></div>
+            <!-- about me -->
+            <div><a href="./about-me.html">About</a></div>
+            <!-- projects -->
+            <div><a href="./projects.html">Projects</a></div>
+        </div>
+    </div>
 
-
-        
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="img/logo.png" alt="">
+      
+    <div class="middle-container">
+        <!-- home slide -->
+        <div class="intro">
+            <div class="intro-text">
+                <h1>Welcome! My name is <strong>Nikko Chan</strong></h1>
+                <p class="section-subtitle">Software Developer</p>        
             </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link"> Home </a>
-                    </li>
-
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link"> About Me </a>
-                    </li>
-                    
-                    <li class="nav__item">
-                        <a href="#work" class="nav__link"> My Work </a>
-                    </li>
-
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Introduction  -->
-        <section class="intro" id="home"> 
-            <h1 class="section__title section__title--intro">
-                Welcome! My name is <strong> Nikko C. </strong> 
-            </h1>
-            <p class="section__subtitle section__subtitle--intro"> Software Developer </p>
-            <img src="img/portfolio-pic.jfif" alt="Nikko Logo Pic" class="intro__img">
-        </section>
-
-               <!-- About Me -->
-               <section class="about-me" id="about">
-                <h2 class="section__title section__title--about"> About Me </h2>
-                <p class="section__subtitle section__subtitle--about">Aspiring Developer</p>
-    
-                <div class="about-me__body">
-                    <!-- Programming Experience -->
-                    <p>Hello, I'm a computer science graduate from California State University of Long Beach. I initially started as a Mechanical Engineering major, but switched to Computer Science because I realized I like tinkering with software. </p>
-    
-                    <p>I am skilled at Java, Python, C#, and C++. During my undergrad, I was a Java Teacher’s Assistant where I demonstrated my knowledge of fundamental programming concepts and object-oriented design. After graduation, I’ve been spending my time learning how to get better at programming and learning new technologies. I hope to keep growing for the years to come. I am currently seeking out Junior Software Developer positions. </p>
-    
-                    <!-- Hobbies and Interests -->
-                    <p>One of my new hobbies is to learn things. For example; I've been teaching myself how to develop game using the Unity engine as well as making some projects like the Pomodor Timer GUI and the Chat Room GUI (which you can checkout at my work section). I am also interested in cryptocurrencies, stocks trading, self-growth, dancing, and video games.</p>
-                    
-                </div>
-                <img class="about-me__img"/>
-            </section>
-
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title"> My Projects</h2>
-            <p class="section__subtitle"> Subset of my work</p>
-            <div class="portfolio">
-                <!-- Portfolio Item #01: Java Banking Application -->
-                <a href="banking-app.html" class="portfolio__item">
-                    <img src="img/banking-app.png" alt="Banking App Java GUI" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio Item #02: Java Calculator -->
-                <a href="java-calculator.html" class="portfolio__item">
-                    <img src="img/java-calculator.png" alt="Java Calculator GUI" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio Item #03: Super Bird Game -->
-                <!-- <a href="#" class="portfolio__item">
-                    <img src="img/super-bird-game.jfif" alt="Banking App Java GUI" class="portfolio__img">
-                </a> -->
-
-                <!-- Portfolio Item #04: Image Vault -->
-                <a href="image-vault.html" class="portfolio__item">
-                    <img src="img/imagevault.png" alt="Banking App Java GUI" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio Item #05: Pomodoro Timer GUI -->
-                <a href="pomodoro-timer.html" class="portfolio__item">
-                    <img src="img/pomodoro-timer.png" alt="Banking App Java GUI" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio Item #06: Chat Server GUI -->
-                <a href="chat-server.html" class="portfolio__item">
-                    <img src="img/chat-room.png" alt="Chat Server GUI" class="portfolio__img">
-                </a>
-
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
             <ul class="social-list">
+                <!-- email -->
                 <li class="social-list__item">
                     <a class="social-list__link" href="mailto:gnikkoch@gmail.com">
                         <i class="fas fa-envelope-square"></i>
                     </a>
                 </li>
+                <!-- linkedin -->
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://www.linkedin.com/in/nikko-chan-68533b121/">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
+                <!-- github -->
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://github.com/gnikkoch96">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
+
+                <!-- codepen -->
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://drive.google.com/file/d/1KwQjAYofs502CQd9za35IVOtZegfpEVX/view?usp=sharing">
-                        <i class="fas fa-file"></i>
+                    <a class="social-list__link" href="https://codepen.io/gnikkoch96">
+                        <i class="fas fa-folder"></i>
                     </a>
                 </li>
-            </ul>
-        </footer>
 
-        <script src="js/index.js"></script>      
-    </body>
+                <!-- resume -->
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://drive.google.com/file/d/18sylfbSYJzXen9xArwLBXzVzSGDwW9wr/view?usp=sharing">
+                        <i class="fas fa-file"></i>
+                    </a>
+                </li>                
+            </ul>
+        </div>
+
+        <section class="middle-container-bkg"></section>
+    </div>
+
+ 
+    
+    <!-- footer -->
+    <div class="footer"></div>
+</body>
 </html>
